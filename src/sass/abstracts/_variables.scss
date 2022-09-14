@@ -1,0 +1,46 @@
+$breakpoints: (
+	small: 38em,
+	medium: 50em,
+	large: 62em,
+);
+
+$colors: (
+	neutral: (
+		100: hsl(0 0% 100%),
+		200: hsl(0 0% 98%),
+		400: hsl(0 0% 41%),
+		800: hsl(0 0% 8%),
+		900: hsl(0 0% 0%),
+	),
+);
+
+$font-sizes: (
+	small: (
+		// standard
+		300: 1.4rem,
+		400: 1.6rem,
+		700: 3.6rem,
+		// exceptions
+		dropdown: 1.6rem,
+	),
+	medium: (
+		400: 1.8rem,
+		700: 8rem,
+		dropdown: 1.4rem,
+	),
+);
+
+$font-weights: (
+	400: 500,
+	700: 700,
+);
+
+$border-radius: (
+	300: 1rem,
+	400: 1.5rem,
+);
+
+$spacings: (
+	em: (),
+	rem: (),
+);
