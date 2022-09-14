@@ -24,6 +24,8 @@
       <button aria-expanded="false"
               aria-controls="primary-nav"
               aria-label="Toggle menu"
+              data-role="toggle"
+              data-target="#primary-nav"
               class="toggle-button primary-navigation__toggle">
         <img src="./dist/images/icon-menu.svg" alt="" class="toggle-button__icon-open">
         <img src="./dist/images/icon-close-menu.svg" alt="" class="toggle-button__icon-close">
@@ -34,8 +36,8 @@
             <button aria-expanded="false"
                     aria-controls="features-list"
                     aria-label="Toggle features list"
-                    data-target="features-list"
-                    data-role="dropdown-toggle"
+                    data-target="#features-list"
+                    data-role="toggle"
                     class="link dropdown__toggle">
               Features
               <img src="./dist/images/icon-arrow-down.svg" alt="">
@@ -65,8 +67,8 @@
             <button aria-expanded="false"
                     aria-controls="company-list"
                     aria-label="Toggle company list"
-                    data-target="company-list"
-                    data-role="dropdown-toggle"
+                    data-target="#company-list"
+                    data-role="toggle"
                     class="link dropdown__toggle">
               Company
               <img src="./dist/images/icon-arrow-down.svg" alt="">
@@ -123,7 +125,7 @@
     </div>
   </main>
 
-  <script src="./dist/js/main.min.js"></script>
+  <script src="./dist/js/main.min.js" defer></script>
 </body>
 
 </html>
