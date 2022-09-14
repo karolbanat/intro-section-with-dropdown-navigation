@@ -16,21 +16,111 @@
 </head>
 
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header>
+    <nav class="primary-navigation">
+      <a href="#"><img src="./dist/images/logo.svg" alt="snap logo"></a>
+      <button aria-expanded="false"
+              aria-controls="primary-nav"
+              aria-label="Toggle menu"
+              class="toggle-button">
+        <img src="./dist/images/icon-menu.svg" alt="" class="toggle-button__icon-open">
+        <img src="./dist/images/icon-close-menu.svg" alt="" class="toggle-button__icon-close">
+      </button>
+      <div id="primary-nav" class="primary-navigation__nav">
+        <ul class="primary-navigation__nav-links">
+          <li class="dropdown primary-navigation__nav-item">
+            <button aria-expanded="false"
+                    aria-controls="features-list"
+                    aria-label="Toggle features list"
+                    data-target="features-list"
+                    data-role="dropdown-toggle"
+                    class="dropdown__toggle">
+              Features
+              <img src="./dist/images/icon-arrow-down.svg" alt="">
+            </button>
+            <ul id="features-list" class="dropdown__nav">
+              <li>
+                <a href="#" class="link primary-navigation__nav-link"><img src="./dist/images/icon-todo.svg" alt="">
+                  Todo
+                  List</a>
+              </li>
+              <li>
+                <a href="#" class="link primary-navigation__nav-link"><img src="./dist/images/icon-calendar.svg" alt="">
+                  Calendar</a>
+              </li>
+              <li>
+                <a href="#" class="link primary-navigation__nav-link"><img src="./dist/images/icon-reminders.svg"
+                       alt="">
+                  Reminders</a>
+              </li>
+              <li>
+                <a href="#" class="link primary-navigation__nav-link"><img src="./dist/images/icon-planning.svg" alt="">
+                  Planning</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown primary-navigation__nav-item">
+            <button aria-expanded="false"
+                    aria-controls="company-list"
+                    aria-label="Toggle company list"
+                    data-target="company-list"
+                    data-role="dropdown-toggle"
+                    class="dropdown__toggle">
+              Company
+              <img src="./dist/images/icon-arrow-down.svg" alt="">
+            </button>
+            <ul id="company-list" class="dropdown__nav">
+              <li>
+                <a href="#" class="link">History</a>
+              </li>
+              <li>
+                <a href="#" class="link">Our Team</a>
+              </li>
+              <li>
+                <a href="#" class="link">Blog</a>
+              </li>
+            </ul>
+          </li>
+          <li class="primary-navigation__nav-item">
+            <a href="#" class="link">Careers</a>
+          </li>
+          <li class="primary-navigation__nav-item">
+            <a href="#" class="link">About</a>
+          </li>
+        </ul>
+        <div role="group" class="button-group">
+          <a href="#" class="button button--link button--small">Login</a>
+          <a href="#" class="button button--transparent button--small">Register</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes,
-  create team rituals, and watch productivity soar.
-
-  Learn more
+  <main>
+    <div class="container">
+      <section class="introduction">
+        <header class="introduction__header">
+          <h1 id="main-content">Make remote work</h1>
+          <p>Get your team in sync, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.</p>
+          <a href="#" class="button button--primary">Learn more</a>
+          <ul class="introduction__clients">
+            <li><img src="./dist/images/client-databiz.svg" alt="databiz logo"></li>
+            <li><img src="./dist/images/client-audiophile.svg" alt="audiophile logo"></li>
+            <li><img src="./dist/images/client-meet.svg" alt="meet logo"></li>
+            <li><img src="./dist/images/client-maker.svg" alt="maker logo"></li>
+          </ul>
+        </header>
+        <div class="image-container">
+          <picture>
+            <source media="(min-width: 800px)" srcset="./dist/images/image-hero-desktop.png">
+            <img src="./dist/images/image-hero-mobile.png" alt="Man holding laptop and typing.">
+          </picture>
+        </div>
+      </section>
+    </div>
+  </main>
 
   <script src="./dist/js/main.min.js"></script>
 </body>
