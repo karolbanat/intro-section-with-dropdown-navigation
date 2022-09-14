@@ -1,4 +1,5 @@
 const toggleBtns = document.querySelectorAll('button[data-role="toggle"]');
+const navToggle = document.querySelector('.toggle-button');
 
 const handleToggleBtns = (e) => {
 	const toggleBtn = e.target;
@@ -33,4 +34,10 @@ const handleToggleBtns = (e) => {
 	}
 };
 
+const handleBodyScrollOnNavbarToggle = () => {
+	const expanded = navToggle.getAttribute('aria-expanded') === 'true' ? true : false;
+	document.body.style.overflowY = expanded ? 'hidden' : 'visible';
+};
+
 toggleBtns.forEach((button) => button.addEventListener('click', handleToggleBtns));
+navToggle.addEventListener('click', handleBodyScrollOnNavbarToggle);
