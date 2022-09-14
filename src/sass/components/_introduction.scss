@@ -1,0 +1,51 @@
+@use '../abstracts/mixins' as mxn;
+
+.introduction {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	gap: 4.8rem;
+	padding-bottom: 10rem;
+	@include mxn.mq(medium) {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: unset;
+	}
+
+	&__header {
+		--flow-spacer: clamp(2.4rem, 4vw, 4.8rem);
+		--max-width: 55.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: var(--max-width);
+		padding-inline: 1.6rem;
+		text-align: center;
+		@include mxn.mq(medium) {
+			position: relative;
+			justify-content: center;
+			align-items: flex-start;
+			text-align: initial;
+			padding-right: 0;
+
+			& p {
+				max-width: 45ch;
+			}
+		}
+	}
+
+	&__clients {
+		display: flex;
+		align-items: center;
+		gap: clamp(2rem, 3vw, 4rem);
+		margin-top: 4.8rem;
+		@include mxn.mq(medium) {
+			position: absolute;
+			bottom: 0;
+		}
+	}
+
+	&__image {
+		width: 48rem;
+	}
+}

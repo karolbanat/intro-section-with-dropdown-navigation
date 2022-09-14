@@ -103,7 +103,7 @@
   <main>
     <div class="container">
       <section class="introduction">
-        <header class="introduction__header">
+        <header class="introduction__header | flow">
           <h1 id="main-content">Make remote work</h1>
           <p>Get your team in sync, no matter your location. Streamline processes,
             create team rituals, and watch productivity soar.</p>
@@ -115,12 +115,11 @@
             <li><img src="./dist/images/client-maker.svg" alt="maker logo"></li>
           </ul>
         </header>
-        <div class="image-container">
-          <picture>
-            <source media="(min-width: 800px)" srcset="./dist/images/image-hero-desktop.png">
-            <img src="./dist/images/image-hero-mobile.png" alt="Man holding laptop and typing.">
-          </picture>
-        </div>
+        <picture>
+          <source media="(min-width: 800px)" srcset="./dist/images/image-hero-desktop.png">
+          <img src="./dist/images/image-hero-mobile.png" alt="Man holding laptop and typing."
+               class="introduction__image">
+        </picture>
       </section>
     </div>
   </main>

@@ -6,8 +6,11 @@
 	&__toggle {
 		background: none;
 		border: none;
-		transition: rotate 0.35s ease;
 		cursor: pointer;
+
+		& img {
+			transition: rotate 0.35s ease;
+		}
 
 		&[aria-expanded='true'] img {
 			rotate: 180deg;

@@ -18,6 +18,19 @@
 		--button-bg: var(--button-bg-hover, transparent);
 	}
 
+	&--primary {
+		--button-text: var(--clr-neutral-200);
+		--button-text-hover: var(--clr-neutral-800);
+		--button-bg: var(--clr-neutral-800);
+		--button-bg-hover: var(--clr-neutral-200);
+		font-weight: var(--fw-700);
+
+		&:hover,
+		&:focus {
+			outline: 1px solid var(--button-text-hover);
+		}
+	}
+
 	&--link {
 		--button-text: var(--clr-neutral-400);
 		--button-text-hover: var(--clr-neutral-800);
