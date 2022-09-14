@@ -3,7 +3,14 @@
 @use './base/base';
 
 @use './layout/flow';
+@use './layout/container';
+@use './layout/flex';
 
 @use './components/skip-link';
+@use './components/link';
+@use './components/button';
+@use './components/toggle-button';
+@use './components/primary-navigation';
+@use './components/dropdown';
 
 @use './utility/visually-hidden';

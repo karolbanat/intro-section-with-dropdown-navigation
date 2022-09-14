@@ -1,0 +1,37 @@
+@use './link';
+
+.button {
+	display: inline-block;
+	padding: 1em 1.5em;
+	text-align: center;
+	text-decoration: none;
+	line-height: 1;
+	color: var(--button-text, black);
+	background-color: var(--button-bg, white);
+	border-radius: var(--borr-400);
+	cursor: pointer;
+	transition: color 0.35s ease, background-color 0.35s ease, border-color 0.35s ease;
+
+	&:hover,
+	&:focus {
+		--button-text: var(--button-text-hover, gray);
+		--button-bg: var(--button-bg-hover, transparent);
+	}
+
+	&--link {
+		--button-text: var(--clr-neutral-400);
+		--button-text-hover: var(--clr-neutral-800);
+		padding: 0;
+	}
+
+	&--transparent {
+		--button-text: var(--clr-neutral-400);
+		--button-text-hover: var(--clr-neutral-800);
+		--button-bg: transparent;
+		border: 2px solid var(--button-text);
+	}
+
+	&--small {
+		font-size: var(--fz-300);
+	}
+}

@@ -8,6 +8,7 @@
 			--clr-#{$color}-#{$shade}: #{$value};
 		}
 	}
+	--clr-shadow: hsl(0 0% 0% / 0.15);
 
 	// font families
 	--ff-primary: 'Epilogue', sans-serif;

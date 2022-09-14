@@ -17,13 +17,14 @@
 
 <body>
   <a href="#main-content" class="skip-link">Skip to content</a>
+
   <header>
     <nav class="primary-navigation">
       <a href="#"><img src="./dist/images/logo.svg" alt="snap logo"></a>
       <button aria-expanded="false"
               aria-controls="primary-nav"
               aria-label="Toggle menu"
-              class="toggle-button">
+              class="toggle-button primary-navigation__toggle">
         <img src="./dist/images/icon-menu.svg" alt="" class="toggle-button__icon-open">
         <img src="./dist/images/icon-close-menu.svg" alt="" class="toggle-button__icon-close">
       </button>
@@ -35,11 +36,11 @@
                     aria-label="Toggle features list"
                     data-target="features-list"
                     data-role="dropdown-toggle"
-                    class="dropdown__toggle">
+                    class="link dropdown__toggle">
               Features
               <img src="./dist/images/icon-arrow-down.svg" alt="">
             </button>
-            <ul id="features-list" class="dropdown__nav">
+            <ul id="features-list" class="dropdown__nav dropdown__nav--align-right">
               <li>
                 <a href="#" class="link primary-navigation__nav-link"><img src="./dist/images/icon-todo.svg" alt="">
                   Todo
@@ -66,11 +67,11 @@
                     aria-label="Toggle company list"
                     data-target="company-list"
                     data-role="dropdown-toggle"
-                    class="dropdown__toggle">
+                    class="link dropdown__toggle">
               Company
               <img src="./dist/images/icon-arrow-down.svg" alt="">
             </button>
-            <ul id="company-list" class="dropdown__nav">
+            <ul id="company-list" class="dropdown__nav dropdown__nav--align-left">
               <li>
                 <a href="#" class="link">History</a>
               </li>
@@ -89,7 +90,7 @@
             <a href="#" class="link">About</a>
           </li>
         </ul>
-        <div role="group" class="button-group">
+        <div role="group" class="button-group" style="--group-spacer: clamp(1.6rem, 3vw, 4rem)">
           <a href="#" class="button button--link button--small">Login</a>
           <a href="#" class="button button--transparent button--small">Register</a>
         </div>

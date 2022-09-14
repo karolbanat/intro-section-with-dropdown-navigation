@@ -1,0 +1,43 @@
+@use '../abstracts/mixins' as mxn;
+
+.dropdown {
+	position: relative;
+
+	&__toggle {
+		background: none;
+		border: none;
+		transition: rotate 0.35s ease;
+		cursor: pointer;
+
+		&[aria-expanded='true'] img {
+			rotate: 180deg;
+		}
+	}
+
+	&__nav {
+		display: none;
+		gap: 1.6rem;
+		padding: 2.4rem;
+		&[data-expanded] {
+			display: grid;
+		}
+
+		@include mxn.mq(medium) {
+			position: absolute;
+			bottom: -1rem;
+			width: max-content;
+			translate: 0 100%;
+			background-color: var(--clr-neutral-100);
+			box-shadow: 0 1rem 4rem var(--clr-shadow);
+			border-radius: var(--borr-300);
+
+			&--align-right {
+				right: 0;
+			}
+
+			&--align-left {
+				left: 0;
+			}
+		}
+	}
+}

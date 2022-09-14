@@ -1,0 +1,11 @@
+@use '../abstracts/mixins' as mxn;
+
+.button-group {
+	display: flex;
+	flex-direction: column;
+	gap: var(--group-spacer, 1.6rem);
+	@include mxn.mq(medium) {
+		flex-direction: row;
+		align-items: center;
+	}
+}
